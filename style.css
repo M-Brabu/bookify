@@ -1,0 +1,81 @@
+#navbar{
+    background-color: #ff4d52;
+    border-radius: 10px;
+    color:white;
+    animation-name:naver;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+    animation-iteration-count:1;
+    width: 0%;
+}
+@keyframes naver{
+    0%{
+      width: 0%;
+    }
+    50%{
+       width: 50%;
+    }
+    100%{
+       width:100%;
+    }
+}
+#overlayer{
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    width:100vw;
+    height:100vh;
+    z-index:1;
+    display:none;
+}
+#popup{
+    display:none;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(255, 51, 0);
+    z-index:2;
+    color:azure;
+    border-radius:25px;
+    padding: 20px;
+    width: fit-content;
+    box-shadow: 0 0 30px red;
+}
+#popup input{
+    font-size: large;
+    margin-top:10px;
+    border-radius: 25px;
+    height: 30px;
+    margin:2px;
+    border-width: 1px;
+}
+#popup button{
+    border-radius: 25px;
+    margin-top:10px;
+    background-color: springgreen;
+}
+#adder{
+  position: absolute;
+  border-radius: 100%;
+  padding:25px;
+  bottom:10%;
+  right:10%;
+  font-size:25px;
+  background-color: #ff4d52;
+}
+#details{
+    color: white;
+   display:flex;
+  flex-wrap: wrap;
+   gap:10px;
+   padding: 10px;
+    border-radius: 25px;
+}
+#detbut{
+    border-radius: 25px;
+    background-color: #ff4d52;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
