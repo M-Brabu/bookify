@@ -20,19 +20,22 @@ function reader(){
  var titlev=title.value
  var desv=des.value
  var imgv=img.files[0];
-   var det=`<div style="padding:15px; margin:15px; background-color:black; border-radius:10px;"><h1>${titlev}</h1>
+   var det=`<div style="padding:15px; margin:15px; background-color:rgb(255,51,0);
+    box-shadow: 0 0 10px blue; border-radius:10px;"><h1>${titlev}</h1>
    <h3>${authorv}</h3><p>${desv}</p><button id="detbut" onclick='deleter(event)'>delete</button></div>`
    var ro=new FileReader()
    if(imgv){
    ro.onload=function(e){
-   var det=`<div style="padding:15px; margin:15px; background-color:black; border-radius:10px;"><h1>${titlev}</h1>
+   var det=`<div style="padding:15px; margin:15px;  background-color: rgb(255,51,0);
+    box-shadow: 0 0 10px blue;border-radius:10px;"><h1>${titlev}</h1>
    <h3>${authorv}</h3><p>${desv}</p><img style="width:100px;height:100px;"src='${e.target.result}'><br><button id="detbut" onclick='deleter(event)'>delete</button></div>`
    details.innerHTML=details.innerHTML+det
    }
    ro.readAsDataURL(imgv)
    }
    else{
-      var det=`<div style="padding:15px; margin:15px; background-color:black; border-radius:10px;"><h1>${titlev}</h1>
+      var det=`<div style="padding:15px; margin:15px;background-color: rgb(255,51,0);
+    box-shadow: 0 0 10px blue;border-radius:10px;"><h1>${titlev}</h1>
    <h3>${authorv}</h3><p>${desv}</p><img style=""src=''>No image uploaded<br><button id="detbut" onclick='deleter(event)'>delete</button></div>`
    details.innerHTML=details.innerHTML+det
    }
